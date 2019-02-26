@@ -7,4 +7,21 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'data-binding-app';
+
+  counter: number = 0;
+
+  count() {
+    this.counter++;
+  }
+
+  showhide: boolean = true;
+
+  clickTwice() {
+    if (this.showhide == true) {
+      this.showhide = false;
+    }
+    else {
+      this.showhide = true;
+    }
+  }
 }
